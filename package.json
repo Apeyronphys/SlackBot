@@ -1,0 +1,22 @@
+{
+  "name": "white",
+  "version": "1.0.0",
+  "description": "WhitePizzaBot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "White"
+  ],
+  "author": "Dmitry",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/events-api": "^2.3.0",
+    "@slack/interactive-messages": "^1.3.0",
+    "@slack/rtm-api": "^5.0.2",
+    "@slack/web-api": "^5.1.0",
+    "@slack/webhook": "^5.0.1",
+    "mongodb": "^3.3.2"
+  }
+}
