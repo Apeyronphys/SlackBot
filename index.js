@@ -162,8 +162,8 @@ slackInteractions.action({ type: 'dialog_submission' }, (payload, respond) => {
 
 //Message After Order Confirmation In The Dialog Box//
     const result = web.chat.postMessage({
-        channel: 'CNDR184P2',
-        text: 'Заказ принят <@' + payload.user.name + '>, ожидайте звонка, для подтверждения заказа.'
+        channel: 'channel',
+        text: 'Заказ принят <@' + payload.user.name + '>, ожидайте подтверждения заказа.'
     });
 });
 
@@ -172,7 +172,7 @@ rtm.on('message', async (data) =>{
     if (data.text === 'ПИЦЦА' || data.text == 'PIZZA'){
         try { 
             const result = await web.chat.postMessage({
-                channel: 'CNDR184P2',
+                channel: 'Channel',
                 blocks: [
                     {
                         "type": "section",
@@ -274,7 +274,7 @@ rtm.on('message', async (data) =>{
     console.log('Bot Enabled');
 
     await web.chat.postMessage({
-        channel: 'CNDR184P2',
+        channel: 'Channel',
         text: 'Здравствуйте, для заказа пиццы, напишите "Пицца" или "Pizza"'
     });
 })();
